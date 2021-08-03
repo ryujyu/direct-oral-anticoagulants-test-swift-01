@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var creTextFiled: UITextField!
     @IBOutlet weak var genderegmentedControl: UISegmentedControl!
     @IBOutlet weak var claerBtnAction: UIButton!
     @IBOutlet weak var calculationBtnAction: UIButton!
@@ -19,14 +20,34 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
             weightTextField.placeholder = "体重をkgで入力してください。"
             ageTextField.placeholder = "年齢を数字で入力してください。"
+        creTextFiled.placeholder = "クレアチニンクリアランスを数字で入力してください"
         }
 
 
     /// 確認ボタン押下後に画面遷移
-    @IBAction func nextBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "toNext", sender: nil)
-
+    @IBAction func calculationBtnAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCalcViewController", sender: nil)
         
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // segueのIDを確認して特定のsegueのときのみ動作させる
+            if segue.identifier == "toCalcViewController" {
+                // 遷移先のViewControllerを取得
+                let next = segue.destination as? Calc_ViewController
+                // 遷移先のプロパティに処理ごと渡す
+                next?.resultHandler = { text in
+                    // 引数を使ってoutputLabelの値を更新する処理
+                    self.outputLabel.text = text
+                }
+            }
+        }
+        
+        func calculation(weight: Double, age: Double) -> String {
+            let h = weight / 100
+            let w = age
+            var result = w / (h * h)
+            result = floor(result * 10) / 10
+            return result.description
+        }
     }
 }
 
