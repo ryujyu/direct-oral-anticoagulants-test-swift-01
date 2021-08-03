@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646BFB9882FBE046B670CD3D /* Pods_direct_oral_anticoagulants_test_swift_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021CE680E635B898AF5F5031 /* Pods_direct_oral_anticoagulants_test_swift_01.framework */; };
 		84D5CBCA269C32100013A2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CBC9269C32100013A2E7 /* AppDelegate.swift */; };
 		84D5CBCC269C32100013A2E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CBCB269C32100013A2E7 /* SceneDelegate.swift */; };
 		84D5CBCE269C32100013A2E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5CBCD269C32100013A2E7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021CE680E635B898AF5F5031 /* Pods_direct_oral_anticoagulants_test_swift_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_direct_oral_anticoagulants_test_swift_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5CBC6269C32100013A2E7 /* direct-oral-anticoagulants-test-swift-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "direct-oral-anticoagulants-test-swift-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5CBC9269C32100013A2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D5CBCB269C32100013A2E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		84D5CBD5269C32110013A2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D5CBD7269C32110013A2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D5CBDD269C331B0013A2E7 /* direct-oral-anticoagulants-test-swift-01 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "direct-oral-anticoagulants-test-swift-01"; sourceTree = "<group>"; };
+		CBB071C8229A3E79648C1236 /* Pods-direct-oral-anticoagulants-test-swift-01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-direct-oral-anticoagulants-test-swift-01.debug.xcconfig"; path = "Target Support Files/Pods-direct-oral-anticoagulants-test-swift-01/Pods-direct-oral-anticoagulants-test-swift-01.debug.xcconfig"; sourceTree = "<group>"; };
+		D6089ADE2159F93A783930BA /* Pods-direct-oral-anticoagulants-test-swift-01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-direct-oral-anticoagulants-test-swift-01.release.xcconfig"; path = "Target Support Files/Pods-direct-oral-anticoagulants-test-swift-01/Pods-direct-oral-anticoagulants-test-swift-01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646BFB9882FBE046B670CD3D /* Pods_direct_oral_anticoagulants_test_swift_01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F172E4E48DD20BF2D0E8F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBB071C8229A3E79648C1236 /* Pods-direct-oral-anticoagulants-test-swift-01.debug.xcconfig */,
+				D6089ADE2159F93A783930BA /* Pods-direct-oral-anticoagulants-test-swift-01.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84D5CBBD269C32100013A2E7 = {
 			isa = PBXGroup;
 			children = (
 				84D5CBC8269C32100013A2E7 /* direct-oral-anticoagulants-test-swift-01 */,
 				84D5CBC7269C32100013A2E7 /* Products */,
+				1F172E4E48DD20BF2D0E8F08 /* Pods */,
+				B37D7ED4761E96A2AAC20C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,14 @@
 			path = "direct-oral-anticoagulants-test-swift-01";
 			sourceTree = "<group>";
 		};
+		B37D7ED4761E96A2AAC20C5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				021CE680E635B898AF5F5031 /* Pods_direct_oral_anticoagulants_test_swift_01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D5CBDA269C32110013A2E7 /* Build configuration list for PBXNativeTarget "direct-oral-anticoagulants-test-swift-01" */;
 			buildPhases = (
+				2CBFDDC0769653DF1461BC03 /* [CP] Check Pods Manifest.lock */,
 				84D5CBC2269C32100013A2E7 /* Sources */,
 				84D5CBC3269C32100013A2E7 /* Frameworks */,
 				84D5CBC4269C32100013A2E7 /* Resources */,
+				BC594451521045ACA88DAC99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CBFDDC0769653DF1461BC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-direct-oral-anticoagulants-test-swift-01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC594451521045ACA88DAC99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-direct-oral-anticoagulants-test-swift-01/Pods-direct-oral-anticoagulants-test-swift-01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-direct-oral-anticoagulants-test-swift-01/Pods-direct-oral-anticoagulants-test-swift-01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-direct-oral-anticoagulants-test-swift-01/Pods-direct-oral-anticoagulants-test-swift-01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D5CBC2269C32100013A2E7 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		84D5CBDB269C32110013A2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB071C8229A3E79648C1236 /* Pods-direct-oral-anticoagulants-test-swift-01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		84D5CBDC269C32110013A2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6089ADE2159F93A783930BA /* Pods-direct-oral-anticoagulants-test-swift-01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
